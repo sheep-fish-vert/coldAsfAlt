@@ -97,29 +97,30 @@ function cutText(){
 
 /*header buter*/
 function headeButer(menuMobile,toggleMenu){
-    if(menuMobile){
+
         menuMobile.click(function(event) {
-            if($(window).width()<1024-$.scrollbarWidth()){
-                $(this).toggleClass('active');
-                toggleMenu.stop().slideToggle();
-            }
+            //$(this).toggleClass('active');
+
+            ///toggleMenu.stop().slideToggle();
+            console.log('123');
         });
 
-        $(document).on('click touchstart',function (event){
-            if($(window).width()<1024-$.scrollbarWidth()){
-                var div = toggleMenu;
-                if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
-                    {
-                        toggleMenu.slideUp();
-                        menuMobile.removeClass('active');
-                    }
-            }
-        });
-    }
+        // $(document).on('click',function (event){
+        //     var div = toggleMenu;
+        //     if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
+        //         {
+        //             toggleMenu.slideUp();
+        //             menuMobile.removeClass('active');
+
+        //             console.log('asdasd');
+        //         }
+        // });
+
 }
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
+    headeButer($('.menu-button'),$('.navigation_menu'));
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
