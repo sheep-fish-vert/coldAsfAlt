@@ -5,15 +5,20 @@
 /*/header and top block*/
 
 /*header*/
-header{min-height: 70px;outline: 1px solid red;
+$ye:#faec07;
+header{min-height: 70px;outline: 1px solid red;margin-bottom: 30px;
     &>.mbox{text-align: center;}
     .navigation_menu{display: none;}
     .logo{float: left;padding-top: 7px;}
     .tel{float: right;text-align: right;padding-top: 8px;
         a{display: block;color: white;font-size: 24px;text-transform: uppercase;text-decoration: none;margin-bottom: 5px;}
     }
-    .call_tell{position: absolute;top: 100%;right: 0;}
-    .menu-button{display: inline-block;width: 40px;height: 40px;position: relative;margin-top: 15px;outline: 1px solid red;
+    .call_tell{position: absolute;top: calc(100% + 15px);right: 0;
+        a{color: $ye;font-size: 14px;text-decoration: underline;text-transform: uppercase;
+            &:hover{text-decoration: none;}
+        }
+    }
+    .menu-button{display: inline-block;width: 40px;height: 40px;position: relative;margin-top: 15px;outline: 1px solid red;cursor: pointer;
         &:after,&:before{content: '';position: absolute;left: 0;top: 20%;width: 100%;height: 2px;background-color: #fff;transition:all ease .2s;}
         &:before{top: auto;bottom: 20%;}
         span{position: absolute;left: 0;top: 48%;width: 100%;height: 2px;background-color: #fff;transition:all ease .2s;}
@@ -29,7 +34,8 @@ header{min-height: 70px;outline: 1px solid red;
 /*/header*/
 
 /*top block*/
-.top-block{
-
+.top-block{padding-top: 136px;
+    .item{width: 50%;float: left;}
+    .title{text-align: center;font-size: 36px;font-weight: 700;color: white;text-transform: uppercase;}
 }
 /*/top block*/
