@@ -15,14 +15,53 @@
 }
 @media screen and (max-width: 992px){
 
+    /* advantages */
+
+        .advantages{
+            .title{text-align: center;
+                &:before{left:calc(50% - 66px);}
+            }
+            .list{margin: 0 auto;width: 100%;max-width: 540px;}
+            .advantages-main{position:relative;}
+            .float-left, .float-right{float:none;}
+            .advantages-img{display: none;}
+        }
+
+    /* /advantages */
+
 }
 @media screen and (max-width: 767px){
+
+    /* advantages */
+
+        .advantages{
+            .title{font-size: 26px;line-height: 32px;}
+        }
+
+    /* /advantages */
 
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
+
+    /* advantages */
+
+        .advantages{
+            .title{font-size: 20px;line-height: 26px;}
+            .list-num{font-size: 60px;width: 46px;}
+            .list{
+                li{margin-bottom: 10px;}
+                &:last-child{
+                    li{
+                        &:last-child{margin-bottom: 0;}
+                    }
+                }
+            }
+        }
+
+    /* /advantages */
 
 }
 @media screen and (max-width: 320px){
