@@ -99,22 +99,20 @@ function cutText(){
 function headeButer(menuMobile,toggleMenu){
 
         menuMobile.click(function(event) {
-            //$(this).toggleClass('active');
-
-            ///toggleMenu.stop().slideToggle();
-            console.log('123');
+            $(this).toggleClass('active');
+            $('.top-main').toggleClass('active');
+            toggleMenu.stop().slideToggle();
         });
 
-        // $(document).on('click',function (event){
-        //     var div = toggleMenu;
-        //     if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
-        //         {
-        //             toggleMenu.slideUp();
-        //             menuMobile.removeClass('active');
-
-        //             console.log('asdasd');
-        //         }
-        // });
+        $(document).on('click',function (event){
+            var div = toggleMenu;
+            if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
+                {
+                    toggleMenu.slideUp();
+                    menuMobile.removeClass('active');
+                    $('.top-main').removeClass('active');
+                }
+        });
 
 }
 
