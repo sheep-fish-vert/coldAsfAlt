@@ -50,6 +50,8 @@ a[href] {
     .global-wrapper{overflow: hidden;}
 
     .standart{position: relative;padding:300px 0;
+        &.top-main{padding: 0 0 300px 0;}
+        &.contacts{padding:300px 0 0 0;}
         .standart-bottom, .standart-top{position: absolute;width: 100%;
             &:before, &:after{content: '';display: block;position: absolute;width: 0;height: 0;border-width: 150px 480px;border-style:solid;left:50%;top:0;}
             &:before{margin-left:-960px;}
