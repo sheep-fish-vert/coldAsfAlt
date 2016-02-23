@@ -15,6 +15,17 @@
 }
 @media screen and (max-width: 992px){
 
+    /* advantages */
+
+        .advantages{
+            .list{margin: 0 auto;width: 100%;max-width: 540px;}
+            .advantages-main{position:relative;}
+            .float-left, .float-right{float:none;}
+            .advantages-img{display: none;}
+        }
+
+    /* /advantages */
+
 }
 @media screen and (max-width: 767px){
 
