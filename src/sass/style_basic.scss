@@ -53,15 +53,17 @@ a[href] {
         &.top-main{padding: 0 0 300px 0;}
         &.contacts{padding:300px 0 0 0;}
         .standart-bottom, .standart-top{position: absolute;width: 100%;
-            &:before, &:after{content: '';display: block;position: absolute;width: 0;height: 0;border-width: 150px 480px;border-style:solid;left:50%;top:0;}
+            &:before, &:after{content: '';display: block;position: absolute;width: 0;height: 0;border-width: 150px 480px;border-style:solid;left:50%;}
             &:before{margin-left:-960px;}
             &:after{margin-right: -960px;}
         }
-        .standart-top{
+        .standart-top{top:0;
+            &:before, &:after{top:0;}
             &:before{border-color:#fff #fff transparent transparent;}
             &:after{border-color:#fff transparent transparent #fff;}
         }
-        .standart-bottom{
+        .standart-bottom{bottom:0;
+            &:before, &:after{bottom:0;}
             &:before{border-color:transparent transparent #fff #fff;}
             &:after{border-color:transparent #fff #fff transparent;}
         }
