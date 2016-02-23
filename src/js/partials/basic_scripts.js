@@ -100,7 +100,7 @@ function headeButer(menuMobile,toggleMenu){
 
         menuMobile.click(function(event) {
             $(this).toggleClass('active');
-
+            $('.top-main').toggleClass('active');
             toggleMenu.stop().slideToggle();
         });
 
@@ -110,6 +110,7 @@ function headeButer(menuMobile,toggleMenu){
                 {
                     toggleMenu.slideUp();
                     menuMobile.removeClass('active');
+                    $('.top-main').removeClass('active');
                 }
         });
 

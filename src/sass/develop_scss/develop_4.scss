@@ -1,5 +1,10 @@
 /*header and top block*/
-.top-main{background: url(../images/asphalt-bg.jpg) top left repeat #2b2c2f;min-height: 912px;position: relative;
+.top-main{background: url(../images/asphalt-bg.jpg) top left repeat #2b2c2f;min-height: 912px;position: relative;overflow: hidden;
+    &.active{
+        &:after, &:before{background-color: rgba(0,0,0, .0);}
+        header>.mbox:before{background-color: rgba(0,0,0, .90);z-index: 9;content: '';top: 0;left: 50%;width: 5000px;height: 1050px;position: absolute;transition:all ease .2s;transform: translateX(-50%);}
+        .top-block{z-index: 0;}
+    }
     &:after{content: '';z-index: 0;width: 50%;height: 100%;left: 0;top: 0;background-color: rgba(0,0,0, .45);position: absolute;}
     &:before{content: '';z-index: 0;width: 50%;height: 100%;right: 0;top: 0;background-color: rgba(0,0,0, .70);position: absolute;}
     .standart-bottom{z-index: 10;}
@@ -8,7 +13,7 @@
 
 /*header*/
 $ye:#faec07;
-header{min-height: 70px;margin-bottom: 30px;position: relative;z-index: 1;
+header{min-height: 70px;padding-bottom: 30px;position: relative;z-index: 1;
     &>.mbox{text-align: center;}
     .navigation_menu{display: none;}
     .logo{float: left;padding-top: 7px;}
@@ -46,7 +51,7 @@ header{min-height: 70px;margin-bottom: 30px;position: relative;z-index: 1;
     }
 }
 /*top block*/
-.top-block{padding-top: 136px;position: relative;z-index: 1;
+.top-block{padding-top: 136px;position: relative;z-index: 1;transition:all ease .2s;
     .item{width: 50%;float: left;position: relative;padding: 0 6%;
         &:last-child{
             .text:after{height: 93px;}
