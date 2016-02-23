@@ -4,11 +4,17 @@
         .title{font-weight: 700;font-size: 36px;text-transform: uppercase;padding-bottom: 10px;position: relative;color:#000;margin-bottom: 45px;
             &:before{content: '';display: block;position: absolute;top:100%;left:0;height: 1px;width: 133px;background-color: #000;}
         }
-        .list{width: calc((100% - 200px) / 2);}
+        .list{width: calc((100% - 200px) / 2);
+            li{
+                span{display: inline-block;vertical-align: middle;}
+            }
+        }
         .float-left{float: left;}
         .float-right{float:right;}
-        .advantages-img{padding: 0 5px;}
+        .advantages-img{padding: 50px 10px 0 0px;}
 
+        .list-num{width: 66px;font-weight: 700;font-size: 90px;color:#929292;}
+        .list-text{width: calc(100% - 75px);font-size: 18px;color:#000;font-weight: 500;line-height: 24px;}
 
     }
 
