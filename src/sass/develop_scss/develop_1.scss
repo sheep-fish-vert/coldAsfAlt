@@ -22,21 +22,32 @@
 
 /* instructions */
 
-    .instructions{background-image:url(../images/instructions-bg.jpg);background-position: center top;background-repeat: no-repeat;
-
-        .list-main{display: flex;position: relative;padding-top: 95px;color:#fff;text-transform: uppercase;
-            &:before{content: '';display: block;position: absolute;height:calc(100% - 95px);width: 1px;background-color: #faec07;left:50%;margin-left: -1px;}
+    .instructions{background-image:url(../images/instructions-bg.jpg);background-position: center top;background-repeat: no-repeat;height: 1087px;
+        .list-main{display: flex;position: relative;padding-top: 395px;color:#fff;text-transform: uppercase;
+            &:before{content: '';display: block;position: absolute;height:calc(100% - 395px);width: 1px;background-color: #faec07;left:50%;margin-left: -1px;}
             .title{font-size: 36px;font-weight: 700;line-height: 42px;margin-bottom: 18px;}
+            .slick-dots{left: 0;bottom:-40px;
+                li{
+                    button{width: 15px;height: 15px;border-radius: 50%;background-color: #fff;
+                        &:before{display: none;}
+                    }
+                    &.slick-active{
+                        button{background-color: #faec07;}
+                    }
+                }
+            }
         }
         .list-wrap{width: 50%;position: relative;
-            &:first-child{padding-right: 55px;
+            &.dots-list{padding-right: 55px;
                 ul{
                     li{
                         &:before{content: '';display: inline-block;width: 5px;height: 5px;border-radius: 50%;background-color: #faec07;margin-right: 5px;vertical-align: middle;margin-top: -5px;}
                     }
                 }
             }
-            &:last-child{padding-left: 20px;}
+            &.num-lists{padding-left: 70px;
+                span{color:#faec07;margin-right: 5px;}
+            }
             ul{
                 li{font-size: 12px;font-weight: 500;line-height: 40px;letter-spacing: 0.7px;}
             }
