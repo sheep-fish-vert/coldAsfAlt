@@ -1,7 +1,7 @@
 /* advantages */
 
     .advantages{padding-top:85px;margin-bottom: 90px;
-        .title{font-weight: 700;font-size: 36px;text-transform: uppercase;padding-bottom: 10px;position: relative;color:#000;margin-bottom: 45px;
+        .title{font-weight: 700;font-size: 36px;line-height:42px;text-transform: uppercase;padding-bottom: 10px;position: relative;color:#000;margin-bottom: 45px;
             &:before{content: '';display: block;position: absolute;top:100%;left:0;height: 1px;width: 133px;background-color: #000;}
         }
         .list{width: calc((100% - 200px) / 2);
