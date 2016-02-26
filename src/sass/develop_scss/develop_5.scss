@@ -3,13 +3,13 @@
         img{max-width: none; left:50%; transform:translateX(-50%); position: absolute; }
     }
     .beauty-wrap{
-        .beauty-align{    padding-top: 392px;     padding-bottom: 264px;
-            .text-container{ color: #fff;  width:50%; float:left;
+        .beauty-align{    padding-top: 392px;     padding-bottom: 275px;
+            .text-container{ color: #fff;  width:50%; float:left; font:500 18px/26px 'Geometria';
                 h2{font:700 36px/44px 'Geometria';  text-transform: uppercase;  letter-spacing: -0.5px;   margin-bottom: 15px;}
-                p{font:500 18px/26px 'Geometria';
+                p{
                     span{ border-left: 1px solid #faec07; display: block;     letter-spacing: 0.7px; padding-left: 20px; margin-bottom: 35px;}
                 }
-                li{font:500 18px/26px 'Geometria'; margin-bottom: 14px;     letter-spacing: 0.7px;
+                li{ margin-bottom: 14px;     letter-spacing: 0.7px;
                     &:before{content: ''; display: inline-block; width: 5px;height: 5px;border-radius: 50%;background-color: #faec07;  margin-right: 5px;  vertical-align: middle; margin-top: -5px;}
                 }
                 ul{    padding-top: 14px;}

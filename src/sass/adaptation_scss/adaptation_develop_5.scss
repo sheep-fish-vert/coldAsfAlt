@@ -1,0 +1,56 @@
+@media screen and (max-width: 1920px){
+
+}
+@media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 992px){
+    .beautification{
+        .beauty-wrap{
+            .beauty-align{padding-top: 306px;  padding-bottom: 143px;
+                .text-container{float: none; width:100%; font: 500 12px/15px 'Geometria';
+                    h2{font: 700 20px/26px 'Geometria';}
+                    li{margin-bottom: 3px;}
+                    ul{margin-bottom: 10px;}
+                }
+                .slider-container{float: none; width:100%; padding-left: 0;
+                    .fade{    margin-bottom: 20px;}
+                    .button-row{  text-align: center;}
+                    .slick-prev{left:0; right:auto;}
+                    .slick-next{right:auto; left:45px;}
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .beautification{
+        .beauty-wrap{
+            .beauty-align{padding-top: 306px;  padding-bottom: 40px;
+                .slider-container{
+                    .button-row{
+                        a{font-size: 10px; max-width: 337px; width: 100%;}
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 666px){
+
+}
+@media screen and (max-width: 479px){
+
+}
+@media screen and (max-width: 320px){
+
+}
