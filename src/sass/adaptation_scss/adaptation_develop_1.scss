@@ -10,6 +10,26 @@
 @media screen and (max-width: 1280px){
 
 }
+@media screen and (max-width: 1170px){
+
+    /* nstructions */
+
+        .instructions{
+            .list-wrap{
+                &.dots-lists{padding-right: 20px;}
+                &.num-lists{padding-left:20px;}
+                ul{
+                    li{line-height: 35px;}
+                }
+            }
+            .list-main{
+                .title{font-size: 30px;line-height: 36px;}
+            }
+        }
+
+    /* /instructions */
+
+}
 @media screen and (max-width: 1024px){
 
 }
@@ -29,6 +49,34 @@
 
     /* /advantages */
 
+    /* instructions */
+
+        .instructions{
+            .list-main{
+                &:before{display: none;}
+            }
+            .list-wrap{
+                &.dots-lists, &.num-lists{padding-left: 0;padding-right: 0;}
+            }
+        }
+
+    /* /instructions */
+
+    /* work-with-us */
+
+        .work-with-us{
+            .title{text-align: center;
+                &:before{left:calc(50% - 66px);}
+            }
+            .work-with-us-wrap{
+                .work-with-us-item{width: 50%;
+                    &:nth-child(3n+1), &:nth-child(3n){justify-content:center;}
+                }
+            }
+        }
+
+    /* /work-with-us */
+
 }
 @media screen and (max-width: 767px){
 
@@ -40,8 +88,28 @@
 
     /* /advantages */
 
+    /* work-with-us */
+
+        .work-with-us{
+            .title{font-size: 26px;line-height: 32px;
+                p{font-size: 20px;line-height: 26px;}
+            }
+        }
+
+    /* /work-with-us */
+
 }
 @media screen and (max-width: 666px){
+
+    /* work-with-us */
+
+        .work-with-us{
+            .work-with-us-wrap{
+                .work-with-us-item{width: 100%;}
+            }
+        }
+
+    /* /work-with-us */
 
 }
 @media screen and (max-width: 479px){
@@ -62,6 +130,31 @@
         }
 
     /* /advantages */
+
+    /* instructions */
+
+        .instructions{
+            .list-main{padding-top: 360px;
+                .title{font-size: 22px;line-height: 30px;}
+            }
+            .list-wrap{
+                ul{
+                    li{line-height: 30px;}
+                }
+            }
+        }
+
+    /* /instructions */
+
+    /* work-with-us */
+
+        .work-with-us{
+            .title{font-size: 20px;line-height: 26px;
+                p{font-size: 16px;line-height: 22px;}
+            }
+        }
+
+    /* /work-with-us */
 
 }
 @media screen and (max-width: 320px){
