@@ -36,6 +36,20 @@ function oneHeightItems(){
     }
 
     oneHeight($('.oneHeight'));
+
+    oneHeight($('.street-repairds-text'));
+
+    $(window).load(function(){
+
+        oneHeight($('.street-repairds-text'));
+
+    });
+
+    $(window).resize(function(){
+
+        oneHeight($('.street-repairds-text'));
+
+    });
 }
 
 /*scroll animation*/
@@ -119,11 +133,13 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     headeButer($('.menu-button'),$('.navigation_menu'));
-    //oneHeightItems();
+
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
     //animationBlock($('.setion-animate'));
+
+    oneHeightItems();
 });
 
 $(window).resize(function() {

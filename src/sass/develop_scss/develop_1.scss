@@ -84,3 +84,18 @@
     }
 
 /* /work-with-us */
+
+/* street-repairs */
+
+    .street-repairs{padding-top: 40px;
+        .street-rapairs-wrap{display: flex;flex-wrap:wrap;justify-content:space-around;
+            .street-repairs-item{width: 385px;padding: 0 5px;
+                .street-repairs-title{font-weight: 700;font-size: 36px;text-transform: uppercase;margin-bottom: 20px;}
+                .street-repairds-text{position: relative;padding-left: 20px;font-size: 18px;font-weight: 700;color:#000;line-height: 24px;min-height: 45px;margin-bottom: 30px;
+                    &:before{content:'';display: block;position:absolute;;left:0;top:0;width: 1px;height: 40px;background-color: #000;}
+                }
+            }
+        }
+    }
+
+/* /street-repairs */
