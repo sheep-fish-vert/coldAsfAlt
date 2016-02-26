@@ -38,7 +38,7 @@
             }
         }
         .list-wrap{width: 50%;position: relative;
-            &.dots-list{padding-right: 55px;
+            &.dots-lists{padding-right: 55px;
                 ul{
                     li{
                         &:before{content: '';display: inline-block;width: 5px;height: 5px;border-radius: 50%;background-color: #faec07;margin-right: 5px;vertical-align: middle;margin-top: -5px;}
@@ -58,7 +58,7 @@
 
 /* work-with-us */
 
-    .work-with-us{
+    .work-with-us{padding: 20px 0;
 
         .title{position: relative;font-weight: 700;font-size: 36px;line-height: 42px;text-transform: uppercase;padding-bottom: 10px;color: #000;margin-bottom: 45px;
             &:before{content: '';display: block;position: absolute;top: 100%;left: 0;height: 1px;width: 133px;background-color: #000;}
