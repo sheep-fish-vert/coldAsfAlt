@@ -1,7 +1,13 @@
 try{
 
     $(document).ready(function(){
-
+        $('.fade').slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
     });
 
     $(window).load(function(){

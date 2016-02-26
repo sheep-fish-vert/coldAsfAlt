@@ -1,3 +1,36 @@
-.beautification{
+.beautification{position: relative;
+    .back-beauty{position: relative;
+        img{max-width: none; left:50%; transform:translateX(-50%); position: absolute; }
+    }
+    .beauty-wrap{
+        .beauty-align{    padding-top: 392px;     padding-bottom: 264px;
+            .text-container{ color: #fff;  width:50%; float:left;
+                h2{font:700 36px/44px 'Geometria';  text-transform: uppercase;  letter-spacing: -0.5px;   margin-bottom: 15px;}
+                p{font:500 18px/26px 'Geometria';
+                    span{ border-left: 1px solid #faec07; display: block;     letter-spacing: 0.7px; padding-left: 20px; margin-bottom: 35px;}
+                }
+                li{font:500 18px/26px 'Geometria'; margin-bottom: 14px;     letter-spacing: 0.7px;
+                    &:before{content: ''; display: inline-block; width: 5px;height: 5px;border-radius: 50%;background-color: #faec07;  margin-right: 5px;  vertical-align: middle; margin-top: -5px;}
+                }
+                ul{    padding-top: 14px;}
+            }
+            .slider-container{width:50%; float:left;     padding-left: 47px;
+                .fade{margin-bottom: 50px;}
+                .button-row{ width: 100%; text-align: right;
+                    a{width: 337px;  display: inline-block; height: 61px; border:1px solid #faec07; background-color: transparent; vertical-align: middle; font:700 12px/12px 'Geometria';  text-transform: uppercase; transition: all 300ms; color:#fff; text-align: center; text-decoration: none;     padding-top: 25px;
+                        &:hover{background-color: #faec07;}
+                    }
+                }
 
+                .slick-arrow{width: 45px; height:45px; background-color: rgba(250,236,7,0.2); top: auto; bottom: -21px; z-index: 10; transition: all 300ms;
+                    &:hover{background-color: rgba(250,236,7,1);}
+                    &:before{content: ''; display: block; width: 22px; height: 22px; border-top:4px solid #fff; border-right:4px solid #fff; transform:rotate(45deg); position: absolute; top: 14px; left:6px; opacity: 1;}
+                }
+                .slick-prev{left:auto; right:45px;
+                    &:before{transform:rotate(-135deg); left:16px;}
+                }
+                .slick-next{right:0;}
+            }
+        }
+    }
 }
