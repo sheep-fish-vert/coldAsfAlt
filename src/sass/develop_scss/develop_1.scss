@@ -11,12 +11,13 @@
 
 /* advantages */
 
-    .advantages{padding-top:85px;margin-bottom: 90px;
-        .title{font-weight: 700;font-size: 36px;line-height:42px;text-transform: uppercase;padding-bottom: 10px;position: relative;color:#000;margin-bottom: 45px;
+    .advantages{padding-top:92px;margin-bottom: 90px;position: relative;z-index: 1;
+        .title{font-weight: 700;font-size: 36px;line-height:42px;text-transform: uppercase;padding-bottom: 12px;position: relative;color:#000;margin-bottom: 36px;
             &:before{content: '';display: block;position: absolute;top:100%;left:0;height: 1px;width: 133px;background-color: #000;}
         }
         .list{width: calc((100% - 200px) / 2);
-            li{
+            li{margin-bottom: 3px;
+                &:last-child{margin-bottom: 0px;}
                 span{display: inline-block;vertical-align: middle;}
             }
         }
@@ -25,7 +26,7 @@
         .advantages-img{padding: 50px 10px 0 0px;}
 
         .list-num{width: 66px;font-weight: 700;font-size: 90px;color:#929292;}
-        .list-text{width: calc(100% - 75px);font-size: 18px;color:#000;font-weight: 500;line-height: 24px;}
+        .list-text{width: calc(100% - 75px);font-size: 18px;color:#000;font-weight: 500;line-height: 24px;margin-bottom: -6px;}
 
     }
 
@@ -69,15 +70,15 @@
 
 /* work-with-us */
 
-    .work-with-us{padding: 20px 0 0 0;position:relative;z-index: 2;
+    .work-with-us{padding: 94px 0 0 0;position:relative;z-index: 2;
 
-        .title{position: relative;font-weight: 700;font-size: 36px;line-height: 42px;text-transform: uppercase;padding-bottom: 10px;color: #000;margin-bottom: 45px;
+        .title{position: relative;font-weight: 700;font-size: 36px;line-height: 42px;text-transform: uppercase;padding-bottom: 13px;color: #000;margin-bottom: 39px;
             &:before{content: '';display: block;position: absolute;top: 100%;left: 0;height: 1px;width: 133px;background-color: #000;}
-            p{font-size: 24px;line-height: 30px;}
+            p{font-size: 24px;line-height: 30px;padding-top: 4px;}
         }
 
-        .work-with-us-wrap{display: flex;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom: 10px;
-            .work-with-us-item{width: 33.33%;text-align: center;margin-bottom: 70px;display:flex;justify-content:space-around;
+        .work-with-us-wrap{display: flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+            .work-with-us-item{width: 33.33%;text-align: center;margin-bottom: 82px;display:flex;justify-content:space-around;
                 &:nth-child(3n+1){justify-content:flex-start;}
                 &:nth-child(3n){justify-content:flex-end;}
                 .work-with-us-item-wrap{display: flex;align-items:center;}
@@ -85,8 +86,8 @@
             }
         }
 
-        .work-with-us-button{text-align: center;margin-bottom: -25px;
-
+        .work-with-us-button{text-align: center;margin-bottom: -20px;
+            .button{margin-top: -2px;}
         }
 
     }
@@ -103,12 +104,17 @@
                 .street-repairds-text{position: relative;padding-left: 20px;font-size: 18px;font-weight: 700;color:#000;line-height: 24px;min-height: 45px;margin-bottom: 30px;
                     &:before{content:'';display: block;position:absolute;;left:0;top:0;width: 1px;height: 40px;background-color: #000;}
                 }
+                .street-repairs-button{text-align: center;}
             }
         }
 
         .street-repairs-center{text-align: center;font-size: 24px;font-weight: 700;color:000;line-height: 32px;margin-bottom: -125px;
             .street-repairs-center-text{margin-bottom: 20px;}
 
+        }
+
+        .street-repais-center-button{
+            .button{margin-left: -35px;}
         }
 
     }
