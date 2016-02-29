@@ -27,7 +27,7 @@
 }
 
 .fancybox-close {position: absolute; top: 0px;  right: 0px; background-image: none;
-    &:before{content: ''; width: 20px;position: absolute; height: 2px; background-color: #b00c10; transform: rotate(45deg); top: 10px; left: 14px; }
+    &:before{content: ''; width: 20px;position: absolute; height: 2px; background-color: #b00c10; transform: rotate(45deg); top: 10px; left: 13px; }
     &:after{content: ''; width: 20px;position: absolute; height: 2px; background-color: #b00c10; transform: rotate(135deg); top: 10px; right: 3px;}
 }
 
