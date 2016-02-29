@@ -38,17 +38,18 @@ function oneHeightItems(){
     oneHeight($('.oneHeight'));
 
     oneHeight($('.street-repairds-text'));
+    oneHeight($('.top-block-wrap .text'));
 
     $(window).load(function(){
 
         oneHeight($('.street-repairds-text'));
-
+        oneHeight($('.top-block-wrap .text'));
     });
 
     $(window).resize(function(){
 
         oneHeight($('.street-repairds-text'));
-
+        oneHeight($('.top-block-wrap .text'));
     });
 }
 
