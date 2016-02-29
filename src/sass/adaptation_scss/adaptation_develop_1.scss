@@ -87,6 +87,20 @@
 
     /* /street-repairs */
 
+    /* contacts */
+
+        .contacts{
+            &.standart{padding: 300px 0 420px 0;}
+            .contacts-info{width: 100%;justify-content:center;
+                .contacts-main-wrap{min-height: 500px;
+                    &:after{width: calc(100% - 30px);right: 15px;}
+                }
+            }
+            .contacts-map{left: auto;top:auto;right:auto;bottom: auto;height: 400px;max-width: 600px;width: 100%;margin:0 auto;bottom:0;left:calc(50% - 300px);}
+        }
+
+    /* /contacts */
+
 }
 @media screen and (max-width: 767px){
 
@@ -120,6 +134,15 @@
         }
 
     /* /work-with-us */
+
+    /* contacts */
+
+        .contacts{
+            &:after{content:'';width: 15px;position: absolute;top:0;bottom: 0;right:0;width: 15px;z-index: 2;}
+            .contacts-map{left: 0;max-width: 100%;}
+        }
+
+    /* /contacts */
 
 }
 @media screen and (max-width: 479px){
@@ -178,6 +201,19 @@
         }
 
     /* /street-repairs */
+
+    /* contacts */
+
+        .contacts{
+            .contacts-info{
+                .contacts-title{font-size: 28px;}
+                .contact-line-main{
+                    .contacts-line{font-size: 16px;line-height: 22px;}
+                }
+            }
+        }
+
+    /* /contacts */
 
 }
 @media screen and (max-width: 320px){
