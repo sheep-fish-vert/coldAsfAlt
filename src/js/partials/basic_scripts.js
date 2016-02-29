@@ -115,14 +115,14 @@ function headeButer(menuMobile,toggleMenu){
         menuMobile.click(function(event) {
             $(this).toggleClass('active');
             $('.top-main').toggleClass('active');
-            toggleMenu.stop().slideToggle();
+            toggleMenu.stop().slideToggle(200);
         });
 
         $(document).on('click',function (event){
             var div = toggleMenu;
             if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
                 {
-                    toggleMenu.slideUp();
+                    toggleMenu.slideUp(200);
                     menuMobile.removeClass('active');
                     $('.top-main').removeClass('active');
                 }

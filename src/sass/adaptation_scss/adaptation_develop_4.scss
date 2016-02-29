@@ -14,7 +14,24 @@
 
 }
 @media screen and (max-width: 992px){
+    .top-main{min-height: 0;}
+    /*top block*/
+    .top-block{padding-top: 95px;
+        .item{padding: 0 3%;
+            &:last-child{
+                .text:after{height: 93px;}
+            }
+        }
+        .title{min-height: 147px;}
+        .subtitle{font-size: 30px;
+            b{font-size: 60px;}
+        }
+        .text{font-size: 16px;line-height: 18px;margin-bottom: 74px;
+            p,ul{min-height: 133px;}
 
+        }
+    }
+    /*/top block*/
 }
 @media screen and (max-width: 767px){
 
