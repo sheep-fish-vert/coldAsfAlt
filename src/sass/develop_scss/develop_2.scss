@@ -1,0 +1,45 @@
+#call-popup{ width: 610px; background-color: white;
+    .contact-form{max-width: 340px; margin: 0 auto; padding-top: 90px; padding-bottom: 90px;
+        .contact-form-title{ font-family: 'Geometria', sans-serif; font-weight: 700; font-size: 18px; padding-bottom: 43px; }
+        .contact-form-row{
+            .form_row{position: relative;padding-bottom: 40px;
+                &.error:after{ content: '';position: absolute; right: 0; top: 5px; background-image: url(../images/error.png); width: 19px; height: 19px; transition: all 0.3s;}
+                &.valid:after{content: ''; position: absolute; right: 0; top: 5px; background-image: url(../images/valid.png); width: 19px; height: 19px; transition: all 0.3s;}
+
+                input{height: 30px; width: 100%;border: none; border-bottom: 1px solid black; outline: none; background-color: white; font-size: 14px; font-family: 'Geometria', sans-serif;font-weight: 400;
+                }
+                ::-webkit-input-placeholder {text-transform: uppercase;}
+                ::-moz-placeholder          {text-transform: uppercase;}/* Firefox 19+ */
+                :-moz-placeholder           {text-transform: uppercase;}/* Firefox 18- */
+                :-ms-input-placeholder      {text-transform: uppercase;}
+                label{display: none !important;}
+            }
+            .contact-submit{ cursor: pointer; background-color: white; color: black; transition: all 0.5s;border: 1px solid black;
+                &:hover{color: white;}
+                &:after{background-color: black;}
+            }
+        }
+    }
+}
+
+#call_success{max-width: 400px;  padding: 40px 10px;
+    .call_success{font-size: 18px; font-family: 'Geometria', sans-serif;font-weight: 700; text-align: center; }
+}
+
+.fancybox-close {position: absolute; top: 0px;  right: 0px; background-image: none;
+    &:before{content: ''; width: 20px;position: absolute; height: 2px; background-color: #b00c10; transform: rotate(45deg); top: 10px; left: 14px; }
+    &:after{content: ''; width: 20px;position: absolute; height: 2px; background-color: #b00c10; transform: rotate(135deg); top: 10px; right: 3px;}
+}
+
+.cfoot-wrap{ background: url(../images/asphalt-bg.jpg) top left repeat #2b2c2f; position: relative; min-height: 90px; display: flex; align-items: center;
+    &:before {content: '';z-index: 0;width: 100%; height: 100%; right: 0; top: 0;  background-color: rgba(0, 0, 0, 0.7); position: absolute;}
+    .rt-box{float: right; width: 50%; text-align: right;
+        .soc-box{
+            a{margin-left: 10px; text-decoration: none; display: inline-block; border-radius: 50%; border: 2px solid transparent; transition: all 0.5s; margin-left: 24px;margin-right: -3px;
+                &:hover{border: 2px solid #ACACAC;}
+            }
+        }
+    }
+    .lb-box{float: left; width: 50%; text-align: left;color: white; font-size: 10px; font-family: 'Geometria', sans-serif;font-weight: 700; text-transform: uppercase; line-height: 32px;}
+
+}
