@@ -87,11 +87,16 @@ function animationBlock(item){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('.navigation_menu a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top-65;
-        $(scroller).animate({scrollTop:target},500);
+        $(scroller).animate({scrollTop:target},500,function(){
+            $('.navigation_menu').slideUp(200);
+            $('.menu-button').removeClass('active');
+            $('.top-main').removeClass('active');
+        });
+
     });
 }
 
@@ -137,7 +142,7 @@ $(document).ready(function() {
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    //goTo();
+    goTo();
     //animationBlock($('.setion-animate'));
 
     oneHeightItems();
