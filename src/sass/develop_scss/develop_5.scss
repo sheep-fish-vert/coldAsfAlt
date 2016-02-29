@@ -17,9 +17,7 @@
             .slider-container{width:50%; float:left;     padding-left: 47px;
                 .fade{margin-bottom: 50px;}
                 .button-row{ width: 100%; text-align: right;
-                    a{width: 337px;  display: inline-block; height: 61px; border:1px solid #faec07; background-color: transparent; vertical-align: middle; font:700 12px/12px 'Geometria';  text-transform: uppercase; transition: all 300ms; color:#fff; text-align: center; text-decoration: none;     padding-top: 25px;
-                        &:hover{background-color: #faec07;}
-                    }
+
                 }
 
                 .slick-arrow{width: 45px; height:45px; background-color: rgba(250,236,7,0.2); top: auto; bottom: -21px; z-index: 10; transition: all 300ms;
