@@ -37,9 +37,67 @@ try{
 
     };
 
+    function contactsMapInit(mapWrap){
+
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(cordX,cordY);
+            var myOptions = {
+                zoom: 18,
+                center: myLatlng,
+                disableDefaultUI: true,
+                zoomControl: false,
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoomControlOptions: {
+                   position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+            }
+            var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
+
+            var image = 'images/contact-marker.png';   // иконка картинкой
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                animation: google.maps.Animation.DROP, // анимация при загрузке карты
+                icon: image //  иконка картинкой
+            });
+
+            map.set('styles', [
+                {
+                  stylers: [
+                    { hue: "#ff0000" },
+                    { saturation: -100 }
+                  ]
+                },{
+                  featureType: "road",
+                  elementType: "geometry",
+                  stylers: [
+                   { saturation: 0 },
+                    { invert_lightness: false }
+                  ]
+                },{
+                  featureType: "road",
+                  elementType: "labels",
+                  stylers: [
+                    { visibility: "off" }
+                  ]
+                }
+            ]);
+
+
+        }
+
+        initialize();
+
+    };
+
+
+
     $(document).ready(function(){
 
         instructionSlider();
+        contactsMapInit('contacts-map');
 
     });
 
