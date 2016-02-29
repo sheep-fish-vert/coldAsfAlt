@@ -1,3 +1,14 @@
+/* black-button */
+
+    .button{
+        &.black-button{border-color:#000000;color:#7c7c7c;
+            &:after{background-color:#000;}
+            &:hover{color:#fff;}
+        }
+    }
+
+/* /black-button */
+
 /* advantages */
 
     .advantages{padding-top:85px;margin-bottom: 90px;
@@ -58,27 +69,24 @@
 
 /* work-with-us */
 
-    .work-with-us{padding: 20px 0;
+    .work-with-us{padding: 20px 0 0 0;position:relative;z-index: 2;
 
         .title{position: relative;font-weight: 700;font-size: 36px;line-height: 42px;text-transform: uppercase;padding-bottom: 10px;color: #000;margin-bottom: 45px;
             &:before{content: '';display: block;position: absolute;top: 100%;left: 0;height: 1px;width: 133px;background-color: #000;}
             p{font-size: 24px;line-height: 30px;}
         }
 
-        .work-with-us-wrap{display: flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
+        .work-with-us-wrap{display: flex;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom: 10px;
             .work-with-us-item{width: 33.33%;text-align: center;margin-bottom: 70px;display:flex;justify-content:space-around;
                 &:nth-child(3n+1){justify-content:flex-start;}
                 &:nth-child(3n){justify-content:flex-end;}
                 .work-with-us-item-wrap{display: flex;align-items:center;}
-                .work-with-us-item-text{font-size: 18px;color:#000000;font-weight: 500;line-height: 22px;text-align: left;padding-left: 15px;}
+                .work-with-us-item-text{font-size: 18px;color:#000000;font-weight: 500;line-height: 22px;text-align: left;padding-left: 15px;min-width: 180px;}
             }
         }
 
-        .work-with-us-button{text-align: center;
-            .button{border-color:#000000;color:#7c7c7c;
-                &:after{background-color:#000;}
-                &:hover{color:#fff;}
-            }
+        .work-with-us-button{text-align: center;margin-bottom: -25px;
+
         }
 
     }
@@ -87,15 +95,22 @@
 
 /* street-repairs */
 
-    .street-repairs{padding-top: 40px;
-        .street-rapairs-wrap{display: flex;flex-wrap:wrap;justify-content:space-around;
-            .street-repairs-item{width: 385px;padding: 0 5px;
+    .street-repairs{padding-top: 90px;position: relative;z-index: 2;
+
+        .street-rapairs-wrap{display: flex;flex-wrap:wrap;justify-content:space-around;margin-bottom: 105px;
+            .street-repairs-item{max-width: 385px;width: 100%;padding: 0 5px;margin-bottom: 80px;
                 .street-repairs-title{font-weight: 700;font-size: 36px;text-transform: uppercase;margin-bottom: 20px;}
                 .street-repairds-text{position: relative;padding-left: 20px;font-size: 18px;font-weight: 700;color:#000;line-height: 24px;min-height: 45px;margin-bottom: 30px;
                     &:before{content:'';display: block;position:absolute;;left:0;top:0;width: 1px;height: 40px;background-color: #000;}
                 }
             }
         }
+
+        .street-repairs-center{text-align: center;font-size: 24px;font-weight: 700;color:000;line-height: 32px;margin-bottom: -125px;
+            .street-repairs-center-text{margin-bottom: 20px;}
+
+        }
+
     }
 
 /* /street-repairs */
