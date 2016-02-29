@@ -51,7 +51,7 @@
 
     /* instructions */
 
-        .instructions{
+        .instructions{margin-top: -185px;
             .list-main{
                 &:before{display: none;}
             }
@@ -81,7 +81,7 @@
 
         .street-repairs{
             .street-rapairs-wrap{margin-bottom: 0;
-                .street-repairs-tem{padding: 0;}
+                .street-repairs-item{padding: 0;}
             }
         }
 
@@ -149,7 +149,7 @@
 
     /* advantages */
 
-        .advantages{
+        .advantages{margin-bottom: 0;
             .title{font-size: 20px;line-height: 26px;}
             .list-num{font-size: 60px;width: 46px;}
             .list{
