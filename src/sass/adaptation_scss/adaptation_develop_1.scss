@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 1170px){
 
-    /* nstructions */
+    /* instructions */
 
         .instructions{
             .list-wrap{
@@ -76,6 +76,14 @@
         }
 
     /* /work-with-us */
+
+    /* street-repairs */
+
+        .street-repairs{
+            .street-rapairs-wrap{margin-bottom: 0;}
+        }
+
+    /* /street-repairs */
 
 }
 @media screen and (max-width: 767px){
@@ -155,6 +163,19 @@
         }
 
     /* /work-with-us */
+
+    /* street-repairs */
+
+        .street-repairs{
+            .street-rapairs-wrap{
+                .street-repairs-item{
+                    .street-repairs-title{font-size: 26px;}
+                    .street-repairds-text{font-size: 16px;line-height: 22px;}
+                }
+            }
+        }
+
+    /* /street-repairs */
 
 }
 @media screen and (max-width: 320px){
