@@ -17,13 +17,22 @@
 
 }
 @media screen and (max-width: 767px){
+    #call-popup{ width: 400px;}
 
 }
 @media screen and (max-width: 666px){
+    .cfoot-wrap .rt-box {  float: none;  width: 100%; text-align: center; padding-top: 15px;
+        .soc-box a{margin-left:12px; margin-right: 12px; }
+    }
+    .cfoot-wrap .lb-box {  float: none;  width: 100%; text-align: center; padding-top: 15px;}
 
 }
 @media screen and (max-width: 479px){
-
+    #call-popup{ width: 280px;
+        .contact-form { max-width: 240px; padding-top: 30px; padding-bottom: 30px;
+            .contact-form-title { padding-bottom: 15px; padding-top: 15px; text-align: center; }
+        }
+    }
 }
 @media screen and (max-width: 320px){
 
