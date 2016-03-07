@@ -91,12 +91,54 @@ try{
 
     };
 
+    function scrollTopButton(){
 
+        function showHideScrollButton(){
+
+            console.log($(window).scrollTop()+', '+$(window).height()/2);
+
+            if($(window).scrollTop() > ($(window).height()/2)){
+
+                $('.scroll-top').addClass('show');
+
+            }
+            else{
+
+                $('.scroll-top').removeClass('show');
+
+            }
+
+        }
+
+        $(document).on('click', '.scroll-top.show', function(){
+
+            $(scroller).animate({scrollTop:0},800);
+
+        });
+
+
+        showHideScrollButton();
+
+        $(window).scroll(function(){
+
+            showHideScrollButton();
+
+        });
+
+        $(window).resize(function(){
+
+            showHideScrollButton();
+
+        });
+
+    }
 
     $(document).ready(function(){
 
         instructionSlider();
         contactsMapInit('contacts-map');
+
+        scrollTopButton();
 
     });
 
